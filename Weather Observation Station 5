@@ -1,0 +1,7 @@
+ 
+(select city, length(city) as length from station
+order by length(city), city limit 1)
+union 
+(select city, length(city) as length from station
+order by length(city) desc, city limit 1)
+ 
